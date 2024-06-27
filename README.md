@@ -17,28 +17,6 @@ This investigation is based on data obtained from the Austrian Social Security R
 
 The refined sample consists of 650,922 job losses, selectively filtering out individuals under 20 or over 49 years of age, those employed less than a year or over five years, voluntary quitters, and any instances of rehiring by the same employer. This strategic sample refinement helps ensure that the empirical findings are representative of the broader population of individuals experiencing job loss. The sample included individuals who lost their job at least once. The dataset shares 84% of single job loss, two job losses for 13%, and 3 or more job losses for the remaining 3% of individuals. The final analysis sample is slightly younger, more likely to be female, and a little less likely to hold Austrian citizenship than the overall workforce. Job losers also earn lower wages than workers as a whole. However, overall characteristics of the job losers in the paper’s analysis are fairly similar to those of the broader set of job losers (see Table 1). This suggests that the authors’ empirical results are likely to be representative of the population of job losers.
 
-## 3. Key Results and Findings
-
-### Severance Pay
-- Figure V suggests that the nonemployment duration increases by 10 days (about one and a half weeks) at the threshold for severance pay eligibility. This observed increase, however, cannot be solely attributed to severance pay due to potential confounding effects from extended unemployment benefits.
-- Subsequent analyses (see Figure VI) adjusting for these dual influences reveal a decrease in the reemployment likelihood at the severance pay eligibility threshold, quantified as a 10% reduction in the hazard rate of finding new employment.
-
-![Figure V](figures/figure5.png)
-![Figure VI](figures/figure6.png)
-
-### Extended Benefits (EB)
-- Figure VIIIa suggests that the average nonemployment duration drops by seven days around the EB discontinuity.
-- There is a slight fall in the average hazard rate (see Figure VIIIb), with a sudden fall of approximately 7% in the average hazard rate at the cutoff for EB eligibility.
-
-![Figure VIIIa](figures/figure8a.png)
-![Figure VIIIb](figures/figure8b.png)
-
-### Job Search Duration
-- Figure Xa suggests that increased job search duration due to severance pay did not improve wage levels in the next job, and job leaving hazards are smooth around cut-off (see Figure Xb).
-
-![Figure Xa](figures/figure10a.png)
-![Figure Xb](figures/figure10b.png)
-
 ## 4. Discussion
 
 Proportional hazard models are statistical tools used to conduct survival analysis and evaluate not only if an event happens, like using the logistic regression, but also when it happens. In the context of Card et al., 2007, employing the Cox proportional hazards model, the study assessed the timing and likelihood of reemployment subsequent to job loss, accounting for the duration of unemployment benefits received. This is extremely useful in public finance as it can assist in deciding for how long similar policy benefits should be financed and given to beneficiaries to smooth consumption and improve their welfare. Cox models also helped analyze the dynamic process of job searching over time by handling the time-dependent covariates, which often cause issues in time series analysis due to complex dependency structures. This model is particularly advantageous for analyzing complex, time-dependent data structures typical of longitudinal employment studies such as this.
@@ -49,19 +27,5 @@ While inspecting the validity of the RD design and evaluating main results, the 
 - The Proportional hazard model firmly stands on the assumption that the effects of the covariates are constant over time. It necessitates careful consideration to avoid bias in interpreting the results.
 - Selective censoring in the proportional hazard models may sometimes bias estimates. For instance, Card et al., 2007 censor spells at 140 days to isolate the policy variables’ effects, which might lead to information loss or bias if the censoring is not random.
 
-## 5. Appendix
-
-### Figure References
-- Appendix Figure II: Investigating the practice of selective firing mechanism by analyzing layoffs at 35 months and beyond 36 months.
-- Appendix Figure IIIa & IIIb: Variation in observable characteristics around the 36-month threshold.
-- Appendix Figure IV: Average predicted hazard ratios by tenure-month category using a Cox Proportional Hazard Model.
-- Appendix Table I: Characteristics of job losers vs. the broader set of job losers.
-- Appendix Table II: Estimated effect of SP and EB on nonemployment duration.
-- Appendix Table III: Double RD specifications on job search duration.
-
-![Appendix Figure II](figures/appendix_figure2.png)
-![Appendix Figure IIIa](figures/appendix_figure3a.png)
-![Appendix Figure IIIb](figures/appendix_figure3b.png)
-![Appendix Figure IV](figures/appendix_figure4.png)
 
 
